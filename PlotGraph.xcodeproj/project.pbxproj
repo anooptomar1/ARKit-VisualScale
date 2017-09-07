@@ -15,6 +15,7 @@
 		2D5D2ABB1F4214EB0094F680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D2AB91F4214EB0094F680 /* LaunchScreen.storyboard */; };
 		2D5D2AC61F4214EB0094F680 /* PlotGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2AC51F4214EB0094F680 /* PlotGraphTests.swift */; };
 		2D5D2AD11F4214EB0094F680 /* PlotGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2AD01F4214EB0094F680 /* PlotGraphUITests.swift */; };
+		2D5D2ADF1F4215660094F680 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2ADE1F4215660094F680 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2D5D2ACC1F4214EB0094F680 /* PlotGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlotGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5D2AD01F4214EB0094F680 /* PlotGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotGraphUITests.swift; sourceTree = "<group>"; };
 		2D5D2AD21F4214EB0094F680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5D2ADE1F4215660094F680 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2D5D2AAD1F4214EA0094F680 /* PlotGraph */ = {
 			isa = PBXGroup;
 			children = (
+				2D5D2ADE1F4215660094F680 /* File.swift */,
 				2D5D2AAE1F4214EA0094F680 /* AppDelegate.swift */,
 				2D5D2AB01F4214EB0094F680 /* art.scnassets */,
 				2D5D2AB21F4214EB0094F680 /* ViewController.swift */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5D2AB31F4214EB0094F680 /* ViewController.swift in Sources */,
+				2D5D2ADF1F4215660094F680 /* File.swift in Sources */,
 				2D5D2AAF1F4214EA0094F680 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7TD42S7LLX;
 				INFOPLIST_FILE = PlotGraph/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.myntra.ios.PlotGraph;
@@ -436,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7TD42S7LLX;
 				INFOPLIST_FILE = PlotGraph/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.myntra.ios.PlotGraph;
