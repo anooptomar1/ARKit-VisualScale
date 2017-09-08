@@ -142,7 +142,7 @@ extension ViewController{
         guard let touch = touches.first else { return }
         let results = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.existingPlaneUsingExtent])
         guard let hitFeature = results.last else { return }
-        let hitTransform = SCNMatrix4FromMat4(hitFeature.worldTransform)
+        let hitTransform = SCNMatrix4.init(hitFeature.worldTransform)
         let hitPosition = SCNVector3Make(hitTransform.m41,hitTransform.m42,hitTransform.m43)
         if !isScaleDrawn{
             drawScale(hitPosition: hitPosition)
@@ -263,7 +263,9 @@ extension ViewController{
             switch reason {
             case .excessiveMotion: message += "Try slowing down your movement, or reset the session."
             case .insufficientFeatures: message += "Try pointing at a flat surface, or reset the session."
-            }
+            case .initializing:
+                message += "initializing..."
+             }
             infoDesc.text=message
         case .normal:
             infoTitle.text = "Tracking Status : Normal"
