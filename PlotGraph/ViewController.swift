@@ -131,6 +131,7 @@ extension ViewController{
         if let existingPlane=detectedPlanes.filter({
             (plane) in plane.anchor.identifier == anchor.identifier
         }).first {
+            print("plane extents updated")
             existingPlane.update(anchor)
         }
     }
