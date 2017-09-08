@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2BF5671F62602E00248437 /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BF5661F62602E00248437 /* Plane.swift */; };
 		2D5D2AAF1F4214EA0094F680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2AAE1F4214EA0094F680 /* AppDelegate.swift */; };
 		2D5D2AB11F4214EB0094F680 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D2AB01F4214EB0094F680 /* art.scnassets */; };
 		2D5D2AB31F4214EB0094F680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2AB21F4214EB0094F680 /* ViewController.swift */; };
@@ -15,7 +16,7 @@
 		2D5D2ABB1F4214EB0094F680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D5D2AB91F4214EB0094F680 /* LaunchScreen.storyboard */; };
 		2D5D2AC61F4214EB0094F680 /* PlotGraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2AC51F4214EB0094F680 /* PlotGraphTests.swift */; };
 		2D5D2AD11F4214EB0094F680 /* PlotGraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2AD01F4214EB0094F680 /* PlotGraphUITests.swift */; };
-		2D5D2ADF1F4215660094F680 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D2ADE1F4215660094F680 /* File.swift */; };
+		2DDDB3701F625A1700B08E01 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DDDB36F1F625A1700B08E01 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D2BF5661F62602E00248437 /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
 		2D5D2AAB1F4214EA0094F680 /* PlotGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlotGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5D2AAE1F4214EA0094F680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D5D2AB01F4214EB0094F680 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		2D5D2ACC1F4214EB0094F680 /* PlotGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlotGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D5D2AD01F4214EB0094F680 /* PlotGraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotGraphUITests.swift; sourceTree = "<group>"; };
 		2D5D2AD21F4214EB0094F680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D5D2ADE1F4215660094F680 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2DDDB36F1F625A1700B08E01 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2D5D2AAD1F4214EA0094F680 /* PlotGraph */,
+				2D5D2AB01F4214EB0094F680 /* art.scnassets */,
 				2D5D2AC41F4214EB0094F680 /* PlotGraphTests */,
 				2D5D2ACF1F4214EB0094F680 /* PlotGraphUITests */,
 				2D5D2AAC1F4214EA0094F680 /* Products */,
@@ -101,14 +104,14 @@
 		2D5D2AAD1F4214EA0094F680 /* PlotGraph */ = {
 			isa = PBXGroup;
 			children = (
-				2D5D2ADE1F4215660094F680 /* File.swift */,
 				2D5D2AAE1F4214EA0094F680 /* AppDelegate.swift */,
-				2D5D2AB01F4214EB0094F680 /* art.scnassets */,
 				2D5D2AB21F4214EB0094F680 /* ViewController.swift */,
 				2D5D2AB41F4214EB0094F680 /* Main.storyboard */,
 				2D5D2AB71F4214EB0094F680 /* Assets.xcassets */,
 				2D5D2AB91F4214EB0094F680 /* LaunchScreen.storyboard */,
 				2D5D2ABC1F4214EB0094F680 /* Info.plist */,
+				2DDDB36F1F625A1700B08E01 /* Utilities.swift */,
+				2D2BF5661F62602E00248437 /* Plane.swift */,
 			);
 			path = PlotGraph;
 			sourceTree = "<group>";
@@ -264,7 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D5D2AB31F4214EB0094F680 /* ViewController.swift in Sources */,
-				2D5D2ADF1F4215660094F680 /* File.swift in Sources */,
+				2D2BF5671F62602E00248437 /* Plane.swift in Sources */,
+				2DDDB3701F625A1700B08E01 /* Utilities.swift in Sources */,
 				2D5D2AAF1F4214EA0094F680 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,6 +532,7 @@
 				2D5D2AD71F4214EB0094F680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D5D2AD81F4214EB0094F680 /* Build configuration list for PBXNativeTarget "PlotGraphTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +541,7 @@
 				2D5D2ADA1F4214EB0094F680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D5D2ADB1F4214EB0094F680 /* Build configuration list for PBXNativeTarget "PlotGraphUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +550,7 @@
 				2D5D2ADD1F4214EB0094F680 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
