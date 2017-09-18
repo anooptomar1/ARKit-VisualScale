@@ -26,7 +26,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     private var bandSizeInMeters=[CGFloat]() // will store the distance for the specific bands, 23.5 cm to 24.1 is UK 6
     private var bandNames=[String]() // will store the names of the bands UK5,UK6,UK7
-    private let rootScaleNode=SCNNode()
+    private var rootScaleNode : SCNNode!
 
     //used for pinch zoom
     let captureSession = AVCaptureSession()
@@ -47,15 +47,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.autoenablesDefaultLighting=false
         sceneView.automaticallyUpdatesLighting=false
         prepareBandsData()
+        rootScaleNode = self.sceneView.scene.rootNode
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         // Create a session configuration
-        let configuration = ARWorldTrackingSessionConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
         // Run the view's session
-        sceneView.debugOptions=[ARSCNDebugOptions.showFeaturePoints,.showCameras]
+//        sceneView.debugOptions=[ARSCNDebugOptions.showFeaturePoints,.showCameras]
         sceneView.session.run(configuration)
         
         startAVCaprtureSession()
@@ -82,7 +83,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         /* this is the original band data for men in meters. as you can see the difference between UK 8 to UK 12 is in matter of few centimeters, it is very hard for the user to identifiy the exact band*/
         //bandSizeInMeters=[0.235,0.006,0.007,0.009,0.01,0.006,0.01,0.011]
         //for now, we will use some dummy data for POC.
-        bandSizeInMeters=[0.06,0.08,0.05,0.07,0.08]
+//        bandSizeInMeters=[0.06,0.08,0.05,0.07,0.08]
+        bandSizeInMeters = [0.05,0.05,0.05,0.05,0.05,0.05]
         bandNames=["UK 5","UK 6","UK 7","UK 8","UK 9","UK 10","UK 11","UK 12"]
     }
     
